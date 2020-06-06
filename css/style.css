@@ -1,11 +1,20 @@
+:root {
+    --main-bg-color: #f3f3f4;
+    --primary-color: #00234b;
+    --primary-dark-color: #000024;
+    --secondary-color: #fff04b;
+    --tertiary-color: #28d7fa;
+    --quaternary-color: #ff6473;
+    --main-padding: 100px;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(243, 243, 244);
-    color: rgb(0, 35, 75);
+    background-color: var(--main-bg-color);
+    color: var(--primary-color);
     font-family: Arial, sans-serif;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
@@ -22,7 +31,7 @@ header{
 .logo img{
     height: 70px;
     width: 70px;
-    background: #fff04b;
+    background-color: var(--secondary-color);
     border-radius: 40% 50% 30% 80%;
     margin-right: 10px;
 }
@@ -62,7 +71,7 @@ nav ul .fa{
     height: 90px;
 }
 .sec1 form input{
-    background: white;
+    background-color: white;
     border: none;
     padding-top: 13px;
     padding-bottom: 13px;
@@ -77,7 +86,7 @@ nav ul .fa{
     width: calc(33% - 61px);
 }
 /* .sec1 form select{
-    background: white;
+    background-color: white;
     border: none;
     padding-top: 13px;
     padding-bottom: 13px;
@@ -95,14 +104,14 @@ nav ul .fa{
     position: absolute;
 }
 .sec1 form button{
-    background: #fff04b;
+    background-color: var(--secondary-color);
     border: none;
     width: 60px;
     vertical-align: bottom;
     padding: 12px;
 }
 .sec1 form button:hover{
-    background: #00234b;
+    background-color: var(--primary-color);
     color: white;
 }
 .sec1 form button .fa{
@@ -139,7 +148,7 @@ nav ul .fa{
 }
 .sec2{
     margin-top: 50px;
-    background: #28d7fa;
+    background-color: var(--tertiary-color);
     padding: 20px 100px;
     height: 700px;
 }
@@ -166,7 +175,7 @@ nav ul .fa{
 }
 .sec2 input{
     margin-top: 10px;
-    background: white;
+    background-color: white;
     border: none;
     padding: 15px;
     width: 270px;
@@ -176,11 +185,11 @@ nav ul .fa{
     border: none;
     font-weight: bold;
     padding: 15px;
-    background: #fff04b;
+    background-color: var(--secondary-color);
     font-size: 16px;
 }
 .sec2 button:hover{
-    background: #00234b;
+    background-color: var(--primary-color);
     color: white;
 }
 .sec2 img.downa{
@@ -224,18 +233,18 @@ nav ul .fa{
     border: none;
     font-weight: bold;
     padding: 15px;
-    background: #fff04b;
+    background-color: var(--secondary-color);
     font-size: 16px;
 }
 .sec3 button:hover{
-    background: #00234b;
+    background-color: var(--primary-color);
     color: white;
 }
 
 .sec5{
     margin-top: 50px;
     padding: 20px 100px 50px 100px;
-    background: white;
+    background-color: white;
 }
 .sec5 h2{
     font-size: 1.4em;
@@ -265,12 +274,12 @@ nav ul .fa{
 .sec5 .sec5p hr{
     height: 2px;
     border: none;
-    background: black;
+    background-color: black;
     margin: 10px 0;
 }
 .sec5 .sec5p div a{
     display: block;
-    color: #2bbfed;
+    color: var(--tertiary-color);
     font-size: 1.1em;
     margin: 20px;
     text-decoration: none;
@@ -280,7 +289,7 @@ nav ul .fa{
 }
 
 footer{
-    background: #00234b;
+    background-color: var(--primary-color);
     padding: 20px 50px 0 50px;
 }
 footer .foop{
@@ -289,7 +298,7 @@ footer .foop{
     vertical-align: top;
 }
 footer h4{
-    color: #fff04b;
+    color: var(--secondary-color);
     font-size: 1.1em;
     margin-top: 30px;
 }
@@ -317,7 +326,7 @@ footer img.b{
     display: block;
 }
 footer .footer-bottom{
-    background-color: rgb(0, 0, 36);
+    background-color: var(--primary-dark-color);
     height: 60px;
     width: calc(100% + 100px);
     margin-left: -50px;
@@ -351,7 +360,7 @@ footer .icon .fa{
     text-align: center;
     position: fixed;
     z-index: 2;
-    background: white;
+    background-color: white;
     box-shadow: 2px 2px 10px black;
     border-radius: 20px;
     padding: 50px 100px;
@@ -386,7 +395,7 @@ footer .icon .fa{
     text-align: center;
     position: fixed;
     z-index: 2;
-    background: white;
+    background-color: white;
     box-shadow: 2px 2px 10px black;
     border-radius: 20px;
     padding: 50px 100px;
@@ -426,7 +435,7 @@ footer .icon .fa{
 }
 
 header.searchp{
-    background: #fff04b;
+    background-color: var(--secondary-color);
     padding: 25px 100px;
     height: 185px;
 }
@@ -441,7 +450,7 @@ header.searchp form{
     margin-top: 80px;
 }
 header.searchp form input{
-    background: white;
+    background-color: white;
     border: none;
     padding-top: 13px;
     padding-bottom: 13px;
@@ -457,7 +466,7 @@ header.searchp form input[type="date"]{
 }
 
 /* header.searchp form select{
-    background: white;
+    background-color: white;
     border: none;
     padding-top: 13px;
     padding-bottom: 13px;
@@ -475,7 +484,7 @@ header.searchp form .fa{
     position: absolute;
 }
 header.searchp form button{
-    background: #00234b;
+    background-color: var(--primary-color);
     border: none;
     width: 60px;
     vertical-align: bottom;
@@ -483,7 +492,7 @@ header.searchp form button{
     color: white;
 }
 header.searchp form button:hover{
-    background: #28d7fa;
+    background-color: var(--tertiary-color);
 }
 header.searchp form button .fa{
     margin-left: 0;
@@ -492,8 +501,7 @@ header.searchp form button .fa{
     position: unset;
 }
 .filters{
-    padding: 5px 50px;
-    height: 60px;
+    padding: 20px 100px;
 }
 .filters p.dnum{
     float: left;
@@ -502,25 +510,26 @@ header.searchp form button .fa{
     float: right;
 }
 .filters hr{
-    margin-top: 50px;
+    margin-top: 35px;
 }
 .filters .filter{
     display: none;
 }
+
 .results{
-    padding: 30px 80px;
+    padding: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 70px;
+    column-gap: 20px;
 }
 .results .result{
-    display: inline-block;
-    margin: 15px;
-    margin-top: 60px;
-    background: white;
+    background-color: white;
     border-radius: 20px;
     padding: 20px;
-    padding-bottom: 5px;
-    width: calc(33% - 70px);
+    padding-bottom: 10px;
     vertical-align: top;
-    box-shadow: 2px 2px 10px lightgray;
+    box-shadow: 2px 2px 10px lightgrey;
 }
 .results .result img{
     position: relative;
@@ -529,13 +538,13 @@ header.searchp form button .fa{
     height: 130px;
     margin-left: 50%;
     transform: translate(-50%, -70px);
-    border: 3px solid white;
+    border: 5px solid var(--primary-color);
     margin-bottom: -70px;
 }
 .results .result h2{
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: black;
-    margin-bottom: 0;
+    margin: 20px 0 5px 0;
 }
 
 .results .result p.dspecial{
@@ -545,20 +554,33 @@ header.searchp form button .fa{
 }
 .results .result p.hosname{
     font-weight: bold;
-    font-size: 1.05em;
+    font-size: 1.1em;
 }
 .results .result p.hadd{
-    color: rgb(131, 131, 131);
+    color: grey;
+    font-size: .9em;
+    margin-top: 5px;
+    margin-bottom: 30px;
 }
 .results .result p.atime{
-    display: inline-block;
-    margin-top: 40px;
-    background: #fff04b;
-    padding: 4px;
+    display: block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    width: calc(100% - 20px);
+    text-align: center;
+    font-size: 1.1em;
+}
+.results .result hr{
+    margin: 20px 0 10px 0;
+    border: none;
+    height: 1px;
+    background-color: black;
 }
 .results .result p.rating{
     float: left;
-    color: #ff6473;
+    color: var(--quaternary-color);
+    margin-top: 9px;
 }
 .results .result p.rating span{
     color: black;
@@ -566,9 +588,9 @@ header.searchp form button .fa{
 }
 .results .result p.price{
     float: right;
-    background: #00234b;
+    background-color: var(--primary-color);
     color: white;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border-radius: 5px;
 }
 .resultnav{
@@ -577,136 +599,130 @@ header.searchp form button .fa{
 }
 .resultnav span{
     padding: 10px 15px;
-    background: lightgrey;
+    background-color: lightgrey;
 }
 .resultnav span.active{
-    background: #fff04b;
+    background-color: var(--secondary-color);
 }
 .resultnav span:hover{
-    background: #00234b;
+    background-color: var(--primary-color);
     color: white;
 }
 header.hospip{
-    background: #fff04b;
-    padding: 25px 50px;
-    height: 40px;
+    background-color: var(--secondary-color);
+    padding: 25px 100px;
+    height: 90px;
+}
+header.hospip nav{
+    margin-top: 10px;
 }
 .drmain{
-    padding: 25px 50px;
-    height: 310px;
-    width: 60%;
-    background: white;
+    padding: 25px 25px 25px 100px;
+    height: 400px;
+    width: 65%;
+    background-color: white;
 }
 .drmain img.hpicimg{
     z-index: -1;
     height: 260px;
     width: 100%;
-    border-bottom: .5px solid lightgray;
+    border-bottom: .5px solid lightgrey;
 }
 .drmain img.hlogoimg{
     position: relative;
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    transform: translate(40px, -110px);
-    border: 3px solid white;
+    transform: translate(40px, -60px);
+    border: 5px solid var(--primary-color);
 }
 .drmain h2{
     font-size: 1.7em;
-    color: white;
-    text-shadow: 1px 1px 5px black;
     margin-bottom: 0;
     position: relative;
-    transform: translate(215px, -250px);
+    transform: translate(215px, -150px);
 }
 
-.drmain p.dspecial{
+.drmain span.dspecial{
+    font-size: .8em;
+    font-weight: normal;
+}
+.drmain p.hname{
     font-size: 1.1em;
-    color: white;
-    text-shadow: 1px 1px 5px black;
-    margin-bottom: 0;
     position: relative;
-    transform: translate(215px, -255px);
+    transform: translate(215px, -135px);
 }
 .drmain p.hadd{
-    color: gray;
-    margin-bottom: 0;
+    color: grey;
+    font-size: .9em;
     position: relative;
-    transform: translate(215px, -245px);
+    transform: translate(215px, -130px);
 }
 .ratingp{
-    padding: 20px 80px;
-    width: 60%;
+    margin-left: 100px;
+    padding: 30px 100px 30px 0;
+    width: calc(65% - 100px);
 }
-
 .ratingp .rate, .ratingp .price{
     display: inline-block;
-    width: 30%;
     height: 160px;
     vertical-align: top;
-}
-
+}   
 .ratingp p.p1{
     color: grey;
+    margin-bottom: 20px;
 }
 .ratingp p.p2{
     color: black;
-    margin: 0;
     font-size: 4.4em;
-}
-.ratingp p.p3{
-    margin: 0;
 }
 .ratingp p.p3 .fa{
     font-size: 1.2em;
-    color: #ff6473;
+    color: var(--quaternary-color);
+}
+.ratingp p.p4{
+    margin-top: 10px;
 }
 .ratingp p.p5{
     font-size: 2.5em;
     color: black;
     margin: 0;
 }
-.ratingp hr{
-    position: relative;
-    transform: rotate(90deg) translate(-75px, 230px);
-    width: 150px;
-    border: 1.3px solid white;
+.ratingp .rate{
+    border-right: 5px solid var(--primary-color);
+    padding: 0 60px;
+}
+.ratingp .price{
+    margin: 0 60px;
 }
 .drabout{
-    padding: 30px 50px;
-    width: 60%;
-    background: white;
+    padding: 25px 25px 25px 100px;
+    width: 65%;
+    background-color: white;
 }
-
 .drabout h3{
     font-size: 1.2em;
     margin-top: 40px;
+    margin-bottom: 10px;
 }
-
 .drabout p.draboutd{
     line-height: 2em;
 }
-
-
 .drabout iframe{
     float: left;
     margin-right: 20px;
 }
-
 .drabout p.draboutdl{
     font-weight: bold;
 }
-
 .drabout p.draboutdl.l{
     margin-bottom: 170px;
 }
-
 .drabout p.rating .fa{
-    color: #ff6473;
+    color: var(--quaternary-color);
     font-size: 1.4em;
     margin: 2px;
 }
-
 .drabout p.rating span{
     font-size: 1.2em;
     margin-left: 20px;
@@ -716,12 +732,14 @@ header.hospip{
     top: 0;
     float: right;
     right: 0;
-    width: 32.6%;
-    padding-bottom: 400px;
+    width: 35%;
+    margin-bottom: 430px;
+    height: 100vh;
+    overflow-y: auto;
 }
 .bookapp h2{
-    background: #00234b;
-    padding: 15px 20px;
+    background-color: var(--primary-color);
+    padding: 20px;
     margin-top: 0;
     color: white;
 }
@@ -731,50 +749,48 @@ header.hospip{
 .bookapp form p{
     font-size: 1em;
     color: black;
-    margin-top: 20px;
-    margin-bottom: 8px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .bookapp form input{
-    padding: 10px 15px;
+    padding: 15px 20px;
     border: none;
-    width: calc(100% - 30px);
+    width: 100%;
 }
-.bookapp form select{
+/* .bookapp form select{
     border: none;
     padding: 10px 15px;
     width: 100%;
-}
-
+} */
 .bookapp form input[type="radio"]{
     width: auto;
-    margin: 10px 5px;
+    margin: 15px 10px;
 }
 .bookapp form span{
-    margin-right: 33%;
+    margin-right: 30%;
     font-size: 1em;
     color: black;
 }
 .bookapp form div{
     padding: 2px 15px;
-    background: white;
-    width: calc(100% - 30px);
+    background-color: white;
+    width: 100%;
 }
 .bookapp form div.booktime{
     display: inline-block;
-    width: calc(50% - 13px);
+    width: calc(50% - 3px);
     vertical-align: top;
     padding: 5px;
 }
 .bookapp form button{
     font-size: 1.2em;
-    margin: 20px 0;
-    background: #fff04b;
+    margin: 30px 0 0 0;
+    background-color: var(--secondary-color);
     padding: 15px;
     border: none;
     width: 100%;
 }
-
 .bookapp form button:hover{
-    background: #00234b;
+    background-color: var(--primary-color);
     color: white;
 }
