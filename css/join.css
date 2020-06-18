@@ -1,0 +1,147 @@
+@import './variable.css';
+
+.join1{
+    background-color: var(--primary-light-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px 250px 0px 250px;
+}
+.join1_p1 img{
+    width: 500px;
+    margin-bottom: -2px;
+}
+.join1_p2{
+    text-align: right;
+}
+.join1_p2 h1{
+    font-size: 2.5em;
+    margin-bottom: 35px;
+    margin-top: 80px;
+}
+.join1_p2 p{
+    font-size: 1.4em;
+    font-stretch: ultra-expanded;
+    line-height: 1.3em;
+    margin-bottom: 40px;
+}
+a.list_practice{
+    border: none;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    font-size: 16px;
+    color: white;
+}
+a.list_practice:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+.join2,.join3{
+    text-align: center;
+    padding: 30px 100px 70px 100px;
+}
+.title h1{
+    font-size: 2.2em;
+    letter-spacing: -1px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.join2 .body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 50px;
+}
+.join2 .bodyp{
+    height: 300px;
+    padding: 50px 10px;
+}
+.join2 .bodyp img{
+    width: 90px;
+    margin: 10px;
+}
+.join2 .bodyp h2{
+    font-size: 1.3em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.join2 .bodyp p{
+    font-size: 1.05em;
+    line-height: 1.3em;
+}
+.bottom{
+    margin-top: 70px;
+}
+.join3{
+    background-color: white;
+}
+.join3 .body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 50px;
+}
+.join3 .bodyp{
+    height: 360px;
+    padding: 20px;
+    box-shadow: 1px 1px 5px lightgrey;
+    border-radius: 10px;
+}
+.join3 .bodyp img{
+    width: 90px;
+    margin: 10px;
+}
+.join3 .bodyp h2{
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.join3 .bodyp p{
+    font-size: .85em;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+.join3 .bodyp q{
+    font-size: .9em;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+}
+.join4{
+    background-color: var(--primary-light-color);
+    text-align: center;
+    padding: 30px 350px;
+}
+.join4 .body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+}
+.join4 .bodyp{
+    text-align: left;
+}
+.join4 .bodyp p{
+    margin-bottom: 15px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+.join4 .bodyp input{
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+}
+.join4 .bodyp select{
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+}
+.join4 .bottom input{
+    padding: 15px 30px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    margin: -10px 0 50px 0;
+}
+.join4 .bottom input:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}

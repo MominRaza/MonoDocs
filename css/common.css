@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    width: max-content;
+    text-decoration: none;
+}
+body {
+    background-color: var(--main-bg-color);
+    color: var(--primary-color);
+    font-family: Arial, sans-serif;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    margin: 0;
+}
+header{
+    padding: 50px 100px;
+    height: 60px;
+}
+.logo{
+    float: left;
+}
+.logo h1{
+    vertical-align: top;
+    font-size: 2.6em;
+    font-weight: bold;
+}
+nav{
+    float: right;
+}
+nav ul li{
+    display: inline;
+    margin: 10px 10px;
+}
+nav ul li a{
+    color: var(--primary-color);
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+nav ul .fa{
+    font-size: 12px;
+}
+header.hospip{
+    background-color: var(--secondary-color);
+    padding: 25px 100px;
+    height: 90px;
+}
+header.hospip nav{
+    margin-top: 10px;
+}
+footer{
+    background-color: var(--primary-color);
+    padding: 20px 50px 0 50px;
+}
+footer .foop{
+    display: inline-block;
+    width: calc(20% - 5px);
+    vertical-align: top;
+}
+footer h4{
+    color: var(--secondary-color);
+    font-size: 1.1em;
+    margin-top: 30px;
+}
+
+footer a{
+    display: block;
+    color: white;
+    font-size: .9em;
+    line-height: 2em;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer img.a{
+    width: 200px;
+    display: block;
+    margin-top: 20px;
+}
+footer img.b{
+    margin-left: 12.5px;
+    margin-top: -50px;
+    width: 175px;
+    display: block;
+}
+footer .footer-bottom{
+    background-color: var(--primary-dark-color);
+    height: 60px;
+    width: calc(100% + 100px);
+    margin-left: -50px;
+    padding: 0 50px;
+}
+footer .credit{
+    float: left;
+    margin-top: 15px;
+}
+footer .credit p, footer .credit a{
+    display: inline-block;
+}
+footer .credit p{
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+}
+footer .credit a{
+    margin: 0 10px;
+}
+footer .icon{
+    float: right;
+    margin-top: 15px;
+    color: white;
+}
+footer .icon a{
+    display: inline;
+    margin: 7px;
+}
+footer .icon .fa{
+    margin: 5px;
+    font-size: 20px;
+}
+
+footer .icon a:hover{
+    text-decoration: none;
+}
+.fa-chevron-down{
+    margin-left: 5px;
+}

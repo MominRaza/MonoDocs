@@ -1,0 +1,10 @@
+:root {
+    --main-bg-color: #f3f3f4;
+    --primary-color: #00234b;
+    --primary-dark-color: #000024;
+    --primary-light-color: #bcd0e7;
+    --secondary-color: #fff04b;
+    --tertiary-color: #28d7fa;
+    --quaternary-color: #ff6473;
+    --main-padding: 100px;
+}

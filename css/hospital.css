@@ -1,0 +1,174 @@
+@import './variable.css';
+
+.drmain{
+    padding: 25px 25px 25px 100px;
+    height: 400px;
+    width: 65%;
+    background-color: white;
+}
+.drmain img.hpicimg{
+    z-index: -1;
+    height: 260px;
+    width: 100%;
+    border-bottom: .5px solid lightgrey;
+}
+.drmain img.hlogoimg{
+    position: relative;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translate(40px, -60px);
+    border: 5px solid var(--primary-color);
+}
+.drmain h2{
+    font-size: 1.7em;
+    margin-bottom: 0;
+    position: relative;
+    transform: translate(215px, -150px);
+}
+.drmain span.dspecial{
+    font-size: .8em;
+    font-weight: normal;
+}
+.drmain p.hname{
+    font-size: 1.1em;
+    position: relative;
+    transform: translate(215px, -135px);
+}
+.drmain p.hadd{
+    color: grey;
+    font-size: .9em;
+    position: relative;
+    transform: translate(215px, -130px);
+}
+.ratingp{
+    margin-left: 100px;
+    padding: 30px 100px 30px 0;
+    width: calc(65% - 100px);
+}
+.ratingp .rate, .ratingp .price{
+    display: inline-block;
+    height: 160px;
+    vertical-align: top;
+}   
+.ratingp p.p1{
+    color: grey;
+    margin-bottom: 20px;
+}
+.ratingp p.p2{
+    color: black;
+    font-size: 4.4em;
+}
+.ratingp p.p3 .fa{
+    font-size: 1.2em;
+    color: var(--quaternary-color);
+}
+.ratingp p.p4{
+    margin-top: 10px;
+}
+.ratingp p.p5{
+    font-size: 2.5em;
+    color: black;
+    margin: 0;
+}
+.ratingp .rate{
+    border-right: 5px solid var(--primary-color);
+    padding: 0 60px;
+}
+.ratingp .price{
+    margin: 0 60px;
+}
+.drabout{
+    padding: 25px 25px 25px 100px;
+    width: 65%;
+    background-color: white;
+}
+.drabout h3{
+    font-size: 1.2em;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.drabout p.draboutd{
+    line-height: 2em;
+}
+.drabout iframe{
+    float: left;
+    margin-right: 20px;
+}
+.drabout p.draboutdl{
+    font-weight: bold;
+}
+.drabout p.draboutdl.l{
+    margin-bottom: 170px;
+}
+.drabout p.rating .fa{
+    color: var(--quaternary-color);
+    font-size: 1.4em;
+    margin: 2px;
+}
+.drabout p.rating span{
+    font-size: 1.2em;
+    margin-left: 20px;
+}
+.bookapp{
+    position: sticky;
+    top: 0;
+    float: right;
+    right: 0;
+    width: 35%;
+    margin-bottom: 430px;
+    height: 100vh;
+    overflow-y: auto;
+}
+.bookapp h2{
+    background-color: var(--primary-color);
+    padding: 20px;
+    margin-top: 0;
+    color: white;
+}
+.bookapp form{  
+    margin: 20px;
+}
+.bookapp form p{
+    font-size: 1em;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.bookapp form input{
+    padding: 15px 20px;
+    border: none;
+    width: 100%;
+}
+.bookapp form input[type="radio"]{
+    width: auto;
+    margin: 15px 10px;
+}
+.bookapp form span{
+    margin-right: 30%;
+    font-size: 1em;
+    color: black;
+}
+.bookapp form div{
+    padding: 2px 15px;
+    background-color: white;
+    width: 100%;
+}
+.bookapp form div.booktime{
+    display: inline-block;
+    width: calc(50% - 3px);
+    vertical-align: top;
+    padding: 5px;
+}
+.bookapp form button{
+    font-size: 1.2em;
+    margin: 30px 0 0 0;
+    background-color: var(--secondary-color);
+    padding: 15px;
+    border: none;
+    width: 100%;
+}
+.bookapp form button:hover{
+    background-color: var(--primary-color);
+    color: white;
+}

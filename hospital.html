@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hospital - MonoDocs | Find a Doctor Near You | Book Appointments Online</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/hospital.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
@@ -17,17 +18,17 @@
         </div>
         <nav>
             <ul>
-                <li>About Us</li>
-                <li>Services</li>
-                <li>Contact Us</li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
                 <li>|</li>
-                <li>Log in / Sign up <i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+                <li><a href="#">Log in / Sign up<i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
     </header>
     <section class="bookapp">
         <h2>Book an appointment</h2>
-        <form action="">
+        <form action="./book.html">
             <p>What's the reason for your visit?</p>
             <input type="text" name="" id="" placeholder="Like: Fever, Dehydration etc.">
             <p>Has the patient seen this doctor before?</p>
@@ -36,7 +37,7 @@
                 <input type="radio" name="seen_status" id="" value="1"> <span>Yes</span>
             </div>
             <p>Select a date</p>
-            <input type="date" name="" id="" value="2020-06-05" min="2020-06-05" max="2020-07-05">
+            <input id="datePicker" type="date" name="">
             <!-- <select name="" id="">
                 <option value="">Today</option>
                 <option value="">Tomorrow</option>
@@ -171,8 +172,12 @@
             <h4>Are you a top doctor or dentist?</h4>
             <a href="">List your hospital on MonoDocs</a>
             <h4>Get the MonoDocs app</h4>
-            <img src="images/gp.png" alt="" class="a">
-            <img src="images/as.png" alt="" class="b">
+            <a class="downimg" href="#">
+                <img src="images/gp.png" alt="" class="a">
+            </a>
+            <a class="downimg" href="#">
+                <img src="images/as.png" alt="" class="b">
+            </a>
         </div>
         <div class="footer-bottom">
             <div class="credit">
@@ -181,12 +186,19 @@
                 <a href="">Terms of Use</a>
             </div>
             <div class="icon">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <a href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

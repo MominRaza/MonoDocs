@@ -1,0 +1,55 @@
+<style>
+    .login {
+        /* display: none; */
+        text-align: center;
+        position: fixed;
+        z-index: 2;
+        background-color: white;
+        box-shadow: 2px 2px 10px black;
+        border-radius: 20px;
+        padding: 50px 100px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .login input {
+        display: block;
+        width: 250px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .login button {
+        display: block;
+        width: 275px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .login hr {
+        margin: 30px 0;
+    }
+
+    .login .fa {
+        position: absolute;
+        left: calc(50% + 210px);
+        top: calc(50% - 170px);
+        font-size: 24px;
+        transform: translate(-50%, -50%);
+    }
+</style>
+
+<div class="login">
+    <h2>Patients Log in</h2>
+    <form action="">
+        <input type="email" placeholder="email address">
+        <input type="password" name="" id="" placeholder="password">
+        <button type="submit">Log in</button>
+    </form>
+    <a href="">Forgot your password?</a>
+    <hr>
+    <span>Don't have an account? </span>
+    <a href="">Sign up</a>
+    <i class="fa fa-times" aria-hidden="true"></i>
+</div>

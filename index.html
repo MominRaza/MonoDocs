@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MonoDocs | Find a Doctor Near You | Book Appointments Online</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -19,11 +21,11 @@
         <img class="headerbg" src="images/header.svg" alt="">
         <nav>
             <ul>
-                <li>About Us</li>
-                <li>Services</li>
-                <li>Contact Us</li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
                 <li>|</li>
-                <li>Log in / Sign up <i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+                <li><a href="#">Log in / Sign up<i class="fa fa-chevron-down" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -35,7 +37,7 @@
             <i class="fa fa-map-marker" aria-hidden="true"></i>
             <input type="text" name="" id="" placeholder="zip code or city">
             <i class="fa fa-calendar-o" aria-hidden="true"></i>
-            <input type="date" name="" id="" value="2020-06-05" min="2020-06-05" max="2020-07-05">
+            <input id="datePicker" type="date" name="">
             <!-- <select name="" id="">
                 <option value="">Today</option>
                 <option value="">Tomorrow</option>
@@ -52,39 +54,56 @@
         </div>
         <div class="specialties">
             <div class="specialti">
-                <img src="images/special1.svg" alt="Search for a PCP (Primary Care Physician)."
-                    style="background: #00d7fab3;">
-                <p>Primary Care</p>
+                <a href="#">
+                    <img src="images/special1.svg" alt="Search for a PCP (Primary Care Physician)."
+                        style="background: #00d7fab3;">
+                    <p>Primary Care</p>
+                </a>
             </div>
             <div class="specialti">
-                <img src="images/special2.svg" alt="Search for an OBGYN (Obstetrician/Gynecologist)."
-                    style="background: #ff9fa9b3;">
-                <p>OBGYN</p>
+                <a href="#">
+                    <img src="images/special2.svg" alt="Search for an OBGYN (Obstetrician/Gynecologist)."
+                        style="background: #ff9fa9b3;">
+                    <p>OBGYN</p>
+                </a>
             </div>
             <div class="specialti">
-                <img src="images/special3.svg" alt="Search for a Dentist." style="background: #d7b1ffb3;">
-                <p>Dentist</p>
+                <a href="#">
+                    <img src="images/special3.svg" alt="Search for a Dentist." style="background: #d7b1ffb3;">
+                    <p>Dentist</p>
+                </a>
             </div>
             <div class="specialti">
-                <img src="images/special4.svg" alt="Search for a Dermatologist." style="background: #ff6473b3;">
-                <p>Dermatologist</p>
+                <a href="#">
+                    <img src="images/special4.svg" alt="Search for a Dermatologist." style="background: #ff6473b3;">
+                    <p>Dermatologist</p>
+                </a>
             </div>
             <div class="specialti">
-                <img src="images/special5.svg" alt="Search for a Psychiatrist." style="background: #00e6afb3;">
-                <p>Psychiatrist</p>
+                <a href="#">
+                    <img src="images/special5.svg" alt="Search for a Psychiatrist." style="background: #00e6afb3;">
+                    <p>Psychiatrist</p>
+                </a>
             </div>
             <div class="specialti">
-                <img src="images/special6.svg" alt="Search for an Eye Doctor." style="background: #fff04bb3;">
-                <p>Eye Doctor</p>
+                <a href="#">
+                    <img src="images/special6.svg" alt="Search for an Eye Doctor." style="background: #fff04bb3;">
+                    <p>Eye Doctor</p>
+                </a>
             </div>
             <div class="specialti">
-                <img src="images/special7.svg" alt="Search for an ENT (Ear, Nose, and Throat Doctor)."
-                    style="background: #00d7fab3;">
-                <p>ENT</p>
+                <a href="#">
+                    <img src="images/special7.svg" alt="Search for an ENT (Ear, Nose, and Throat Doctor)."
+                        style="background: #00d7fab3;">
+                    <p>ENT</p>
+                </a>
             </div>
             <div class="specialti">
-                <img src="images/special8.svg" alt="Search for a Gastroenterologist." style="background: #c382ffb3;">
-                <p>Gastroenterologist</p>
+                <a href="#">
+                    <img src="images/special8.svg" alt="Search for a Gastroenterologist."
+                        style="background: #c382ffb3;">
+                    <p>Gastroenterologist</p>
+                </a>
             </div>
         </div>
     </section>
@@ -102,9 +121,12 @@
                 <input type="text" placeholder="(555) 555-5555">
                 <button type="submit">Send link</button>
             </form>
-            <img src="images/gp.png" alt="" class="downa">
-
-            <img src="images/as.png" alt="" class="downb">
+            <a href="#">
+                <img src="images/gp.png" alt="" class="downa">
+            </a>
+            <a href="#">
+                <img src="images/as.png" alt="" class="downb">
+            </a>
         </div>
     </section>
     <section class="sec3">
@@ -116,7 +138,8 @@
             <li>Build and strengthen your online reputation</li>
             <li>Deliver a premium experience patients love</li>
         </ul>
-        <button href="">List your practice on MonoDocs</button>
+        <div class="gap"></div>
+        <a href="#">List your practice on MonoDocs</a>
     </section>
     <section class="sec5">
         <h2>Find doctors and dentists by...</h2>
@@ -205,8 +228,12 @@
             <h4>Are you a top doctor or dentist?</h4>
             <a href="">List your hospital on MonoDocs</a>
             <h4>Get the MonoDocs app</h4>
-            <img src="images/gp.png" alt="" class="a">
-            <img src="images/as.png" alt="" class="b">
+            <a class="downimg" href="#">
+                <img src="images/gp.png" alt="" class="a">
+            </a>
+            <a class="downimg" href="#">
+                <img src="images/as.png" alt="" class="b">
+            </a>
         </div>
         <div class="footer-bottom">
             <div class="credit">
@@ -215,43 +242,19 @@
                 <a href="">Terms of Use</a>
             </div>
             <div class="icon">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <a href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
     </footer>
-    <div class="login">
-        <h2>Patients Log in</h2>
-        <form action="">
-            <input type="email" placeholder="email address">
-            <input type="password" name="" id="" placeholder="password">
-            <button type="submit">Log in</button>
-        </form>
-        <a href="">Forgot your password?</a>
-        <hr>
-        <span>Don't have an account? </span>
-        <a href="">Sign up</a>
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </div>
-    <div class="signup">
-        <h2>Patients Sign in</h2>
-        <form action="">
-            <input type="text" placeholder="Your name">
-            <input type="date" name="" id="" placeholder="Date of birth">
-            <p>Sex</p>
-            <input type="radio" name="sex" id="">Male
-            <input type="radio" name="sex" id="">Female
-            <input type="text" placeholder="mobile number">
-            <input type="email" name="" id="" placeholder="email address">
-            <input type="password" name="" id="" placeholder="password">
-            <button type="submit">Sign in</button>
-        </form>
-        <hr>
-        <span>Already have an account?</span>
-        <a href="">Log in</a>
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </div>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
